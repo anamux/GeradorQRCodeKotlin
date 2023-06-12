@@ -24,6 +24,22 @@ class FirstActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+
+        binding.btnLinkedin!!.setOnClickListener {
+
+            val intent = Intent (this@FirstActivity, LinkedinActivity::class.java )
+            startActivity(intent)
+
+        }
+
+        binding.btnGithub!!.setOnClickListener {
+
+            val intent = Intent (this@FirstActivity, GithubActivity::class.java )
+            startActivity(intent)
+
+        }
+
+
     }
 
 }

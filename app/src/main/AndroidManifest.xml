@@ -25,6 +25,12 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+        <activity
+            android:name=".LinkedinActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GithubActivity"
+            android:exported="true" />
 
     </application>
 

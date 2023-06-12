@@ -14,6 +14,7 @@
     <!-- Github Activity -->
     <string name="link_github">https://github.com/anamux</string>
     <string name="github">GitHub</string>
+    <string name="voltar">Voltar</string>
 
 
 </resources>
