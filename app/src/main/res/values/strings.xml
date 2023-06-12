@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">AppGeradorQRCodeKotlin</string>
+    <string name="title_activities">Gerador de QR Code</string>
+
+    <!--    First Activity Buttons -->
+    <string name="gerar_novo_qr_code">Gerar Novo QR Code</string>
+    <string name="github_qr_code">GitHub QR Code</string>
+    <string name="linkedin_qr_code">LinkedIn QR Code</string>
+
+    <!-- Linkedin Activity -->
+    <string name="linkedin">Linkedin</string>
+    <string name="link_linkedin">www.linkedin.com/in/analidiamuxfeldt</string>
+
+    <!-- Github Activity -->
+    <string name="link_github">https://github.com/anamux</string>
+    <string name="github">GitHub</string>
+
+
 </resources>
