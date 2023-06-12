@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppGeradorQRCodeKotlin</string>
+    <string name="app_name">Cartão de Visita QRCode</string>
     <string name="title_activities">Gerador de QR Code</string>
 
     <!--    First Activity Buttons -->
