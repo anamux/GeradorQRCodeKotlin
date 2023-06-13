@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/md_theme_light_background"
     tools:context=".LinkedinActivity">
 
     <TextView android:id="@+id/txtLinkedin"
@@ -12,6 +13,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/linkedin"
         android:textSize="28sp"
+        android:textColor="@color/md_theme_light_outline"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -27,7 +29,7 @@
         android:gravity="center_horizontal"
         android:ems="10"
         android:text="@string/link_linkedin"
-        android:textColor="@color/md_theme_light_primary"
+        android:textColor="@color/md_theme_light_outline"
         android:textSize="16sp"
         android:textStyle="bold|italic"
         app:layout_constraintTop_toBottomOf="@+id/imgQRCode"
