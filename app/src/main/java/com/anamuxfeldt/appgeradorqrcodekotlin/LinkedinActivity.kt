@@ -1,6 +1,5 @@
 package com.anamuxfeldt.appgeradorqrcodekotlin
 
-import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Bundle
@@ -25,12 +24,6 @@ class LinkedinActivity : AppCompatActivity() {
         //gerar qrcode
         gerarQRCode(binding.editQRCodeLinkedin!!.text.toString())
 
-        //botão voltar
-        binding.btnVoltar!!.setOnClickListener{
-            val intent = Intent (this@LinkedinActivity, FirstActivity::class.java )
-            startActivity(intent)
-            finish()
-        }
 
     }
 

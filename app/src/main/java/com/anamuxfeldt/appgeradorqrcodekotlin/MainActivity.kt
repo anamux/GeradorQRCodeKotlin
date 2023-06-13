@@ -1,10 +1,11 @@
 package com.anamuxfeldt.appgeradorqrcodekotlin
 
-import android.content.Intent
+import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import com.anamuxfeldt.appgeradorqrcodekotlin.databinding.ActivityMainBinding
 import com.google.zxing.BarcodeFormat
@@ -25,6 +26,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnGerarQRCode!!.setOnClickListener {
 
+            val imm = binding.root.context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(binding.root.windowToken, 0)
+
+
             if (TextUtils.isEmpty(binding.editQRCode!!.text.toString())) {
                 //validar editText
                 binding.editQRCode!!.error = "*"
@@ -37,12 +42,6 @@ class MainActivity : AppCompatActivity() {
             }
 
 
-        }
-        //botão voltar
-        binding.btnVoltar!!.setOnClickListener{
-            val intent = Intent (this@MainActivity, FirstActivity::class.java )
-            startActivity(intent)
-            finish()
         }
     }
 

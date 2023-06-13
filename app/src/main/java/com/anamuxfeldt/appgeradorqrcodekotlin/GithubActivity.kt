@@ -1,6 +1,5 @@
 package com.anamuxfeldt.appgeradorqrcodekotlin
 
-import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Bundle
@@ -24,13 +23,6 @@ class GithubActivity : AppCompatActivity() {
 
                 //gerar qrcode
                 gerarQRCode(binding.editQRCodeGithub!!.text.toString())
-
-        //botão voltar
-        binding.btnVoltar!!.setOnClickListener{
-            val intent = Intent (this@GithubActivity, FirstActivity::class.java )
-            startActivity(intent)
-            finish()
-        }
 
         }
 
